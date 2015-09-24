@@ -3,10 +3,10 @@ var program = require('commander');
 var fs = require('fs');
 module.exports = function() {
     program
-        .version('1.0.1')
+        .version('1.0.3')
         .option('-b, --base <n> ', 'Pasta principal com os arquivos que serão filtrados')
         .option('-r, --restriction <n>', 'Restrições. Ex.: -r branch (apenas filtrará os caminhos que tiverem branch no nome)')
-        .option('-ex, --exclude <n>', 'Exclusões. Ex.: -ex target (irá ignorar os caminhos que tiverem target no nome)')
+        .option('-e, --exclude <n>', 'Exclusões. Ex.: -ex target (irá ignorar os caminhos que tiverem target no nome)')
         .option('-f, --filter <n>', 'Arquivo com os dados que serão filtrados')
         .option('-o, --result <n>', 'Arquivo com os resultados da filtragem')
         .option('-i, --index <i>', 'Indice split do caminho que contem o nome do projeto')

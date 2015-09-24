@@ -1,6 +1,6 @@
 {
     "name": "teia-search-cli",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "preferGlobal": "true",
     "description": "Utilitário via linha de comando para o teia-search",
     "main": "main.js",
