@@ -3,7 +3,7 @@ var program = require('commander');
 var fs = require('fs');
 module.exports = function() {
     program
-        .version('1.0.3')
+        .version('1.0.4')
         .option('-b, --base <n> ', 'Pasta principal com os arquivos que serão filtrados')
         .option('-q, --regex <n> ', 'Extensões que serão filtradas (separadas por virgulas) ex.: java,xml,properties ')
         .option('-r, --restriction <n>', 'Restrições. Ex.: -r branch (apenas filtrará os caminhos que tiverem branch no nome)')

@@ -1,6 +1,7 @@
 var teia = require("./teia-search.js");
 teia.init({
     base: "C:\\workspace_sefa_interno",
+    regex: "java,properties,xml",
     // restriction: "branch",
     // exclude: "target",
     filefilter: "filters/novo_filtro.txt",
