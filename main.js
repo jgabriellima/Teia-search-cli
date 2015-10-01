@@ -5,6 +5,7 @@ module.exports = function() {
     program
         .version('1.0.3')
         .option('-b, --base <n> ', 'Pasta principal com os arquivos que serão filtrados')
+        .option('-q, --regex <n> ', 'Extensões que serão filtradas (separadas por virgulas) ex.: java,xml,properties ')
         .option('-r, --restriction <n>', 'Restrições. Ex.: -r branch (apenas filtrará os caminhos que tiverem branch no nome)')
         .option('-e, --exclude <n>', 'Exclusões. Ex.: -ex target (irá ignorar os caminhos que tiverem target no nome)')
         .option('-f, --filter <n>', 'Arquivo com os dados que serão filtrados')
@@ -36,6 +37,12 @@ module.exports = function() {
         } else {
             options.filefilter = program.filter;
         }
+    }
+
+    if(program.regex!==undefined){
+      options.regex = program.regex;
+    }else{
+       addErro("Você precisa inserir alguma extensão de arquivo para que o Teia possa filtrar. Ex: -q java,properties,xml");
     }
     /**/
     function addErro(erro) {
