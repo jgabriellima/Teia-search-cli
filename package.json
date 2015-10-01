@@ -12,7 +12,7 @@
     },
     "dependencies": {
         "commander": "*",
-        "teia-search": "1.0.1"
+        "teia-search": "1.0.3"
     },
     "repository": {
         "type": "git",
